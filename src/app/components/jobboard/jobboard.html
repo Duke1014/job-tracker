@@ -2,11 +2,19 @@
     <!-- <h1>Job Board</h1> -->
     <div class="status-section" id="wishlist">
         <p>Wishlist</p>
+        <button (click)="showJobForm = true">+</button>
+        <app-jobform 
+            *ngIf="showJobForm" 
+            [showJobForm]="showJobForm"
+            (jobAdded)="onJobAdded($event)">
+        </app-jobform>
     </div>
     <div class="status-section" id="applied">
         <p>Applied</p>
+        <button>+</button>
     </div>
     <div class="status-section" id="rejected">
         <p>Rejected</p>
+        <button>+</button>
     </div>
 </div>

@@ -1,0 +1,11 @@
+@if (showJobForm) {
+    <div class="job-form">
+        <form (ngSubmit)="addJob()">
+            <input type="text" placeholder="Company Name" [(ngModel)]="job.company" name="company" required />
+            <input type="text" placeholder="Job Title" [(ngModel)]="job.title" name="title" required />
+            <input type="text" placeholder="URL Link" [(ngModel)]="job.url" name="url" />
+            <input type="text" placeholder="Location" [(ngModel)]="job.location" name="location"/>
+            <button type="submit">Add Job</button>
+        </form>
+    </div>
+}
