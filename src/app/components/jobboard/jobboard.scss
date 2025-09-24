@@ -4,6 +4,7 @@
     align-items: center;
     gap: 20px;
     padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
     .status-section {
         background: #f1f5f9;
         border-radius: 8px;
@@ -13,6 +14,8 @@
         max-width: 600px;
         text-align: center;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        height: 75vh;
+        overflow-y: auto;
         p {
             margin: 0;
             font-size: 1.5rem;
